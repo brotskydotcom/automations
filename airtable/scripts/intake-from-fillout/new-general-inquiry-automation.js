@@ -134,12 +134,13 @@ async function newGeneralInfoRecordAction() {
             masterNamedFieldMap.canonicalPhone,
             ...Object.entries(fieldMap).map((pair) => pair[1]),
         ];
-        const records = await masterTable.selectRecordsAsync({
+        const result = await masterTable.selectRecordsAsync({
             recordIds: matching.map((r) => r.id),
             fields: masterFetchFields,
         });
+        const records = result.records;
         await updateExistingMasterRecords(records);
-        await markMasterRecordsAsDuplicates(records);
+        await markMasterRecordsAsDuplicates(masterTable, records);
     }
 }
 
