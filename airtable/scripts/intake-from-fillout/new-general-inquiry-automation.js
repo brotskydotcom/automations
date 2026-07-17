@@ -17,6 +17,8 @@ const masterNamedFieldMap = {
     initialDate: "fldNXsbL7u6kLJ0xB", // Submission Date
     link: "fldnBfsb2vLkvNtoM", // General Info Link
     linkId: "fldXwcQ5eeBHMsN4K", // General Info Link ID
+    haveAttorney: "fldFztlWXdFr5ZFkT", // Do you currently have an attorney?
+    attorneyOther: "fldSwXCqBFD6mU2zh", // Attorney - Not Sure/Other
 };
 
 // noinspection SpellCheckingInspection
@@ -38,6 +40,7 @@ const stringFieldMap = {
     fldUM9r7ZpETOnXYt: "flddEBS3pVsatT6Zh", // A Number -> A Number
     fldJKQPw75j2HzPLN: "fldwaD4ycbdumuQpv", // Country of Origin -> Country of Origin
     fldW3vEpJ2R7RnfFE: "fldXCH3uVyuqLEzJY", // Assistance/Request -> Service Request Information
+    fldSwXCqBFD6mU2zh: "fldmBNjj0iWyG3ZkI", // Attorney - Not Sure/Other -> Attorney Info
 };
 
 // noinspection SpellCheckingInspection
@@ -46,6 +49,7 @@ const singleChoiceFieldMap = {
     fldbL2M482evbXy1C: "fldfeDUc7AwkLAcxn", // Preferred Language -> Preferred Language
     fldcMicusItnPJAld: "fld0q3mP5U6GRA1uT", // State -> State
     fldnBRerNM3AvLNmr: "fld3SiQOVVKjHrw9n", // Do you identify as LGBTQ+? -> LGBTQ+?
+    fldFztlWXdFr5ZFkT: "fldR65HViIaus0ARp", // Do you currently have an attorney? -> Currently have attorney?
 };
 
 // noinspection SpellCheckingInspection
